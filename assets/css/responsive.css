@@ -1,0 +1,132 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .subscribe-content input[type="email"] {
+        width: 65%;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pd-80 {
+        padding: 50px 0;
+    }
+    .single-gallery-item {
+        width: 50%;
+    }
+    .single-team-item,
+    .subscribe-img,
+    .single-update-food,
+    .footer .col-lg-4 {
+        margin-bottom: 30px;
+    }
+    .update-food-content h4 a {
+        font-size: 20px;
+    }
+    .subscribe-area {
+        text-align: center;
+    }
+    .footer-area h4 {
+        margin-bottom: 31px;
+    }
+    .footer-logo a h2 {
+        margin-bottom: 12px;
+    }
+    .footer .col-lg-4:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .single-gallery-item {
+        width: 100%;
+        height: 250px;
+    }
+    .pd-80 {
+        padding: 40px 0;
+    }
+    .hero-title h1 {
+        font-size: 40px;
+    }
+    .single-hero-table {
+        padding: 150px 0;
+    }
+    .about-img,
+    .single-team-item,
+    .single-update-food,
+    .subscribe-img,
+    .subscribe-content input[type="email"],
+    .footer .col-lg-4,
+    .copyright p {
+        margin-bottom: 30px;
+    }
+    .title h2 {
+        font-size: 25px;
+    }
+    .reservation-area h2 {
+        font-size: 25px;
+    }
+    .reservation-area h4 {
+        font-size: 20px;
+    }
+    .reservation-area {
+        padding: 90px 0;
+    }
+    .single-t-l-content {
+        padding: 20px;
+    }
+    .single-t-l-content h6 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .single-t-l-content i {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    .single-t-l-content h4 {
+        font-size: 16px;
+    }
+    .single-t-l-content h4 span {
+        font-size: 12px;
+    }
+    .post-admin span a {
+        margin-right: 15px;
+    }
+    .owl-carousel.t-l-content .avatar-info img {
+        width: 70px;
+        margin: 20px auto;
+    }
+    .subscribe-content input[type="email"] {
+        width: 100%;
+    }
+    .subscribe-content {
+        text-align: center;
+    }
+    .footer-area h4 {
+        margin-bottom: 20px;
+    }
+    .footer .col-lg-4:last-child {
+        margin-bottom: 0;
+    }
+    .footer-social {
+        text-align: left;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .single-gallery-item {
+        width: 50%;
+        height: 200px;
+    }
+    .single-t-l-content {
+        padding: 40px;
+    }
+}

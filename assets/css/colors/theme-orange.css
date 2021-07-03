@@ -1,0 +1,53 @@
+.mainmenu li:hover a,
+.is-sticky .mainmenu li:hover a,
+.mainmenu li a.active,
+.about-content h2 span,
+.single-food-item h4,
+.single-food-item h6 strong,
+.title i,
+.title h2 span,
+.social-link li a:hover,
+.post-admin span a:hover,
+.read-more-btn:hover,
+.footer-social li a,
+.footer-logo a h2 span,
+.logo a h2 span,
+.Switcher__control i,
+.Switcher h5,
+.update-food-content h4 a {
+	color: orange;
+}
+
+.mainmenu li a:after,
+.button,
+.hero-area .owl-dots button.active,
+.food-carousel .owl-dots button.active,
+.gallery-hover-inner a,
+.lity-close,
+.team-hover,
+.t-l-content .owl-dots button.active,
+.footer-social li a:hover,
+#topcontrol,
+.toggle span,
+.toggle span:before,
+.toggle span:after,
+.tooltip>.tooltip-inner {
+	background-color: orange;
+}
+
+.hero-area .owl-dots button.active {
+	box-shadow: 0px 0px 0px 3px black, 0px 0px 0px 4px orange;
+}
+
+.food-carousel .owl-dots button.active,
+.t-l-content .owl-dots button.active {
+	box-shadow: 0px 0px 0px 3px #fff, 0px 0px 0px 4px orange;
+}
+
+.form-group .form-control:focus {
+	border-color: orange !important;
+}
+
+.single-food-item:hover {
+	border-color: #ffa5007a;
+}

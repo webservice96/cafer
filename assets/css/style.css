@@ -1,0 +1,1033 @@
+/************************
+CSS Index
+* Base CSS
+* Header area CSS
+* Hero area CSS
+* About area CSS
+* Food Menu area CSS
+* Gallery area CSS
+* Team area CSS
+* Reservation area CSS
+* Update area CSS
+* Testimonial CSS
+* Subscribe area CSS
+* Contact area CSS
+* Footer area CSS
+* Colorpanel CSS
+* Preloader CSS
+* Scroll to Top CSS
+************************/
+
+
+/*********
+Base CSS
+*********/
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Poppins:300,300i,400,400i&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    color: #888;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+
+/*** Section Padding ***/
+
+.pd-80 {
+    padding: 80px 0;
+}
+
+
+/*** Align Items Center ***/
+
+.align-items {
+    align-items: center;
+}
+
+
+/*** Overflow hidden ***/
+
+.ovr-h {
+    overflow: hidden;
+}
+
+
+/*** Bg ***/
+
+.bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*** Overlay ***/
+
+.ovly {
+    position: relative;
+    z-index: 1;
+}
+
+.ovly:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+
+/*** Tooltip ***/
+
+.tooltip>.tooltip-inner {
+    background-color: #C82C29;
+}
+
+
+/***************
+Header area CSS
+***************/
+
+.header-absolute {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+#mainmenu-area-sticky-wrapper {
+    position: relative;
+    z-index: 9;
+}
+
+.is-sticky .header-area {
+    background-color: #fff;
+    box-shadow: 0 0 4px rgb(0 0 0 / 0.14), 0 4px 8px rgb(218 213 213 / 0.31);
+    z-index: 99999;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+
+/*** Logo CSS ***/
+
+.logo a h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: white;
+    transition: 0.5s;
+}
+
+.logo a h2 span {
+    color: #d32f2f;
+    transition: 0.5s;
+}
+
+.is-sticky .logo a h2 {
+    color: black;
+}
+
+
+/*** Menu CSS ***/
+
+.mainmenu {
+    text-align: right;
+}
+
+.mainmenu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mainmenu li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu li a {
+    display: block;
+    padding: 17px;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all .3s ease;
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+}
+
+.is-sticky .mainmenu li a {
+    color: black;
+}
+
+.mainmenu li:hover a,
+.is-sticky .mainmenu li:hover a {
+    color: #d32f2f;
+}
+
+.mainmenu li a.active {
+    color: #d32f2f;
+}
+
+.mainmenu li a:after {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 3px;
+    content: "";
+    background-color: #d32f2f;
+    z-index: -1;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.mainmenu li a.active:after,
+.mainmenu li a:hover:after {
+    width: 100%;
+}
+
+
+/*************
+Hero area CSS
+*************/
+
+.hero-bg-1 {
+    background-image: url(../image/hero-bg-1.jpg);
+}
+
+.hero-bg-2 {
+    background-image: url(../image/hero-bg-2.jpg);
+}
+
+.hero-bg-3 {
+    background-image: url(../image/hero-bg-3.jpg);
+}
+
+.hero-bg-4 {
+    background-image: url(../image/hero-bg-4.jpg);
+}
+
+.single-hero-table {
+    width: 100%;
+    padding: 250px 0;
+}
+
+.hero-title h1 {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+
+/*** Button ***/
+
+.button {
+    background-color: #d32f2f;
+    display: inline-block;
+    padding: 15px 40px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+}
+
+.button:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    content: "";
+    background-color: black;
+    z-index: -1;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.button:hover:before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+.button:hover {
+    color: white;
+}
+
+.hero-area .owl-dots {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.hero-area .owl-dots button {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    background: #ddd;
+    display: block;
+    margin: 15px 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px black, 0px 0px 0px 4px #ddd;
+    opacity: .2;
+}
+
+.hero-area .owl-dots button.active {
+    box-shadow: 0px 0px 0px 3px black, 0px 0px 0px 4px #d32f2f;
+    background-color: #d32f2f;
+    opacity: 1;
+}
+
+
+/**************
+About area CSS
+**************/
+
+.about-img img {
+    border-radius: 50%;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-content h2 span {
+    display: block;
+    color: #d32f2f;
+    font-style: italic;
+}
+
+.about-content a.button {
+    margin-top: 30px;
+}
+
+
+/******************
+Food Menu area CSS
+******************/
+
+.food-area {
+    background-color: #f5f5f5;
+}
+
+.title i {
+    color: #d32f2f;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    font-size: 36px;
+}
+
+.title h2 span {
+    color: #d32f2f;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.single-food-item {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    margin: 10px;
+    transition: .3s;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    background-color: white;
+}
+
+.single-food-item img {
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.single-food-item h4 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #d32f2f;
+}
+
+.single-food-item:hover {
+    -webkit-transform: translate(0px, -10px);
+    transform: translate(0px, -10px);
+    border-color: #d32f2f45;
+}
+
+.single-food-item h6 strong {
+    color: #d32f2f;
+    margin-left: 10px;
+}
+
+.food-carousel .owl-dots {
+    text-align: center;
+}
+
+.food-carousel .owl-dots button {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    display: inline-block;
+    margin: 0 7px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #fff, 0px 0px 0px 4px black;
+    opacity: .3;
+}
+
+.food-carousel .owl-dots button.active {
+    box-shadow: 0px 0px 0px 3px #fff, 0px 0px 0px 4px #d32f2f;
+    background-color: #d32f2f;
+    opacity: 1;
+}
+
+
+/****************
+Gallery area CSS
+****************/
+
+.gallery-bg-1 {
+    background-image: url(../image/gallery-bg/gallery-bg-1.jpeg);
+}
+
+.gallery-bg-2 {
+    background-image: url(../image/gallery-bg/gallery-bg-2.jpg);
+}
+
+.gallery-bg-3 {
+    background-image: url(../image/gallery-bg/gallery-bg-3.jpeg);
+}
+
+.gallery-bg-4 {
+    background-image: url(../image/gallery-bg/gallery-bg-4.jpeg);
+}
+
+.gallery-bg-5 {
+    background-image: url(../image/gallery-bg/gallery-bg-5.jpeg);
+}
+
+.gallery-bg-6 {
+    background-image: url(../image/gallery-bg/gallery-bg-6.jpeg);
+}
+
+.gallery-bg-7 {
+    background-image: url(../image/gallery-bg/gallery-bg-7.jpeg);
+}
+
+.gallery-bg-8 {
+    background-image: url(../image/gallery-bg/gallery-bg-8.jpeg);
+}
+
+.gallery-bg-9 {
+    background-image: url(../image/gallery-bg/gallery-bg-9.jpeg);
+}
+
+.single-gallery-item {
+    float: left;
+    width: 33.33%;
+    height: 280px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.gallery-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: table;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.single-gallery-item:hover .gallery-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gallery-hover-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.gallery-hover-inner a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #d32f2f;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.gallery-hover-inner:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #000;
+    z-index: -1;
+    opacity: .8;
+}
+
+.lity-image img {
+    border: 10px solid #f1f1f1;
+    border-radius: 5px;
+}
+
+.lity-close {
+    background-color: #d32f2f;
+    transition: all .5s ease;
+}
+
+.lity-close:hover {
+    background: red;
+}
+
+
+/*************
+Team area CSS
+*************/
+
+.team-hover {
+    background-color: #d32f2f;
+    text-align: center;
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+    bottom: -50%;
+    left: 0;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.team-hover h6 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.team-hover h6 span {
+    display: block;
+    text-transform: capitalize;
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.social-link ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-link li {
+    display: inline-block;
+}
+
+.social-link li a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    transition: .3s;
+}
+
+.social-link li a:hover {
+    background-color: white;
+    color: #d32f2f;
+}
+
+.single-team-item:hover .team-hover {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    bottom: 0;
+}
+
+.single-team-item {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/********************
+Reservation area CSS
+********************/
+
+.reservation-bg {
+    background-image: url(../image/cta-bg.jpg);
+}
+
+.reservation-area {
+    padding: 150px 0;
+    background-attachment: fixed;
+}
+
+.reservation-area h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.reservation-area h4 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+
+/***************
+Update area CSS
+***************/
+
+.single-update-food {
+    background-color: #f9f9ff;
+    transition: .3s;
+}
+
+.single-update-food:hover {
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .1);
+}
+
+.update-food-content {
+    padding: 40px 30px;
+}
+
+.post-admin {
+    margin-bottom: 16px;
+}
+
+.post-admin,
+.post-admin a {
+    color: #888;
+}
+
+.post-admin span i {
+    margin-right: 7px;
+}
+
+.post-admin span a {
+    margin-right: 25px;
+    transition: .3s;
+}
+
+.post-admin span a:hover {
+    color: #d32f2f;
+}
+
+.read-more-btn {
+    color: #888;
+    transition: .3s;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+}
+
+.read-more-btn:hover {
+    color: #d32f2f;
+}
+
+.read-more-btn i {
+    transition: .3s;
+    margin-left: 5px;
+}
+
+.read-more-btn:hover i {
+    margin-left: 10px;
+}
+
+.update-food-content h4 a {
+    color: #d32f2f;
+    font-size: 22px;
+}
+
+.update-food-content h4 {
+    margin-bottom: 16px;
+}
+
+
+/***************
+Testimonial CSS
+***************/
+
+.testimonial-area {
+    background-attachment: fixed;
+}
+
+.testimonial-area,
+.testimonial-area .title h2 {
+    color: #fff;
+}
+
+.t-l-bg {
+    background-image: url(../image/avatar/testimonial-bg.jpg);
+}
+
+.single-t-l-content {
+    background: white;
+    padding: 60px;
+    border-radius: 5px;
+}
+
+.owl-carousel.t-l-content .avatar-info img {
+    width: 100px;
+    margin: 29px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #fff, 4px 4px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.single-t-l-content h6 {
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.single-t-l-content i {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.single-t-l-content h4 {
+    font-size: 23px;
+}
+
+.single-t-l-content h4 span {
+    display: block;
+    color: #888;
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.t-l-content .owl-dots {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    margin-top: -35px;
+}
+
+.t-l-content .owl-dots button {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    display: block;
+    margin: 15px 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 3px #fff, 0px 0px 0px 4px black;
+    opacity: .3;
+}
+
+.t-l-content .owl-dots button.active {
+    box-shadow: 0px 0px 0px 3px #fff, 0px 0px 0px 4px #d32f2f;
+    background-color: #d32f2f;
+    opacity: 1;
+}
+
+
+/******************
+Subscribe area CSS
+******************/
+
+.subscribe-content input[type="email"] {
+    width: 70%;
+    padding: 14px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscribe-content button.button {
+    cursor: pointer;
+    border: none;
+}
+
+.subscribe-content .title {
+    margin-bottom: 20px;
+}
+
+
+/****************
+Contact area CSS
+****************/
+
+.contact-area {
+    background-attachment: fixed;
+}
+
+.contact-bg {
+    background-image: url(../image/contact-bg.jpg);
+}
+
+.contact-area .title,
+.contact-area .title h2 {
+    color: #fff;
+}
+
+.form-group .form-control {
+    margin-bottom: 30px;
+    padding: 13px;
+    background-color: rgba(0, 0, 0, .2);
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: #ddd;
+    border-radius: 3px;
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+    color: #ddd;
+}
+
+.form-group .form-control::-moz-placeholder {
+    color: #ddd;
+}
+
+.form-group .form-control:-ms-input-placeholder {
+    color: #ddd;
+}
+
+.form-group .form-control::-ms-input-placeholder {
+    color: #ddd;
+}
+
+.form-group .form-control::placeholder {
+    color: #ddd;
+}
+
+.form-group button.button {
+    border: none;
+    cursor: pointer;
+}
+
+.form-group .form-control:focus {
+    box-shadow: none;
+    border-color: #d32f2f !important;
+    outline: none;
+}
+
+
+/***************
+Footer area CSS
+***************/
+
+.footer-area {
+    background: #000d1a;
+}
+
+.footer-area:after,
+.copyright:after {
+    opacity: .2;
+}
+
+.footer-area,
+.footer-area a,
+.footer-area h4 {
+    color: #fff;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.contact-info {
+    position: relative;
+    padding-left: 40px;
+}
+
+.contact-info i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 20px;
+}
+
+.footer-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social li {
+    display: inline-block;
+}
+
+.footer-social li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    color: #d32f2f;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+.footer-logo a h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.footer-logo a h2 span {
+    color: #d32f2f;
+}
+
+.footer-area h4 {
+    margin-bottom: 40px;
+}
+
+.copyright {
+    padding: 20px 0;
+}
+
+.footer-social li a:hover {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+.copyright p {
+    margin-bottom: 0;
+}
+
+
+/**************
+Colorpanel CSS
+**************/
+
+.Switcher h5 {
+    margin: 20px 0 10px;
+    color: #d32f2f;
+}
+
+.Switcher__control i {
+    font-size: 20px;
+    -webkit-animation: animate 5s linear infinite;
+    animation: animate 5s linear infinite;
+    color: #d32f2f;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        -webkit-transform: rotate(100deg);
+        transform: rotate(100deg);
+    }
+    100% {
+        -webkit-transform: rotate(1000deg);
+        transform: rotate(1000deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        -webkit-transform: rotate(100deg);
+        transform: rotate(100deg);
+    }
+    100% {
+        -webkit-transform: rotate(1000deg);
+        transform: rotate(1000deg);
+    }
+}
+
+
+/*************
+Preloader CSS
+*************/
+
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../image/preloader/loader.gif) center no-repeat #fff;
+}
+
+
+/*****************
+Scroll to Top CSS
+*****************/
+
+#topcontrol {
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    transition: .3s;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #C82C29;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
+
+#topcontrol:hover {
+    background-color: #35BFE6;
+}
